@@ -1,0 +1,28 @@
+.booksItem {
+  border: cadetblue 1px solid;
+  padding: 6px 24px;
+}
+
+.booksItem-enter {
+  opacity: 0;
+}
+.booksItem-enter-active {
+  opacity: 1;
+  color: midnightblue;
+  transition: all 300ms;
+}
+.booksItem-enter-done {
+  opacity: 1;
+  color: midnightblue;
+}
+.booksItem-exit {
+  opacity: 1;
+  color: midnightblue;
+}
+.booksItem-exit-active {
+  opacity: 0;
+  transition: all 300ms;
+}
+.booksItem-exit-done {
+  opacity: 0;
+}

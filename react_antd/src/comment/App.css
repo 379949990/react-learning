@@ -1,0 +1,11 @@
+.App {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  background-color: #efefef;
+}
+.app_title {
+  padding: 6px 0;
+  margin: 40px 0;
+  border-bottom: #aaa solid 1px;
+}

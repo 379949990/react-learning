@@ -1,0 +1,27 @@
+.downloadBtn {
+  margin: 12px 300px;
+}
+.downloadBtn-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.downloadBtn-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms;
+}
+.downloadBtn-enter-done {
+  opacity: 1;
+}
+.downloadBtn-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.downloadBtn-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 300ms;
+}
+.downloadBtn-exit-done {
+  opacity: 0;
+}

@@ -1,0 +1,82 @@
+<!-- generator 生成器 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 普通函数：
+      function foo_1() {
+        console.log("foo被执行！");
+      }
+
+      // 调用生成器会生成一个迭代器；
+      // 通过调用迭代器的next函数使用迭代器；
+
+      // 生成器函数：
+      function* foo_2() {
+        console.log("fluoxetine_1");
+        yield "fluoxetine_1";
+        console.log("fluoxetine_2");
+        yield "fluoxetine_2";
+        console.log("fluoxetine_3");
+        yield "fluoxetine_3";
+        console.log("fluoxetine_4");
+      }
+
+      // iterator 迭代器：
+      const res_2 = foo_2();
+      console.log(res_2);
+
+      // 使用迭代器:
+      // 调用一次next就会消耗一次迭代器
+      const res_2_next_1 = res_2.next();
+      console.log(res_2_next_1);
+      const res_2_next_2 = res_2.next();
+      console.log(res_2_next_2);
+      const res_2_next_3 = res_2.next();
+      console.log(res_2_next_3);
+      const res_2_next_4 = res_2.next();
+      console.log(res_2_next_4);
+
+      function* generatorNumber() {
+        for (let i = 1; i < 10; i++) {
+          yield i;
+        }
+      }
+      // const interval = setInterval(() => {
+      let numIt = generatorNumber();
+      let numIt_res = numIt.next();
+      console.log(numIt_res);
+      //   if(numIt_res.done == "false"){
+      //     clearInterval(interval);
+      //   }
+      // }, 500)
+
+      console.log("----------------------------------");
+
+      // generator与promise一起使用；
+      function* bar() {
+        console.log("111");
+        const res = yield new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("Hello, fluoxetine");
+          }, 1000);
+        });
+        console.log('res', res);
+      }
+      const barIt = bar();
+      console.log("barIt", barIt);
+      const barIt_1 = barIt.next();
+      console.log('barIt_1', barIt_1);
+      barIt_1.value.then((res) => {
+        const barIt_2 = barIt.next(res);
+        console.log('barIt_2', barIt_2);
+      });
+    </script>
+  </body>
+</html>

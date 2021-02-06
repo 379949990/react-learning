@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.tab_header {
+    display: flex;
+}
+.tab_header_item {
+    flex: 1 ;
+    margin-top: 32px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 42px;
+    border-bottom: 1px solid #aaa;
+}
+.tab_header_item.active{
+    color: rgb(70, 129, 131);
+    border-bottom:rgb(70, 129, 131) solid 2px;
+}

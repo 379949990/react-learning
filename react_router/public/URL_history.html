@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <a href="/home">首页</a><br />
+      <a href="/about">关于</a>
+      <hr />
+    </div>
+    <div class="router-view"></div>
+
+    <script>
+      const aEls = document.getElementsByTagName("a");
+      const routerViewEl = document.getElementsByClassName("router-view")[0];
+
+      for (let el of aEls) {
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          const elHref = el.getAttribute("href");
+          history.pushState({}, "", elHref);
+          urlChange()
+        });
+      }
+
+      window.addEventListener("popstate", urlChange);
+
+      function urlChange() {
+        switch (location.pathname) {
+          case "/home":
+            routerViewEl.innerHTML = "HOME";
+            break;
+          case "/about":
+            routerViewEl.innerHTML = "ABOUT";
+            break;
+          default:
+        }
+      }
+    </script>
+  </body>
+</html>

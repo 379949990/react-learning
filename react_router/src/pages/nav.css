@@ -1,0 +1,13 @@
+.navBar-item {
+  padding: 4px 12px;
+  color: cornflowerblue;
+  font-size: 14px;
+}
+.navBar-item-active {
+  color: rgb(42, 91, 92);
+  font-size: 18px;
+}
+.navBar-item-active_2 {
+  color: rgb(151, 53, 96);
+  font-size: 16px;
+}
