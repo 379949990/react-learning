@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 
 // import CounterClass from './01_体验hooks/01_counter-class';
 // import CounterHooks from './01_体验hooks/02_counter-hook';
 // import ChangeWebTitle from "./02_useEffect/01_changeWebTitle-class";
 // import ChangeWebTitleHook from "./02_useEffect/02_changeWebTitle-hook";
 // import UseEffects from "./02_useEffect/03_使用多个useEffect";
-import UseContext from "./03_useContext/01_useContext";
+// import UseContext from "./03_useContext/01_useContext";
+// import UseReducerDemo from "./04_useReducer/01_useReducerDemo";
+// import UseCallbackDemo from "./05_useCallback/01_useCallbackDemo-不能进行性能优化 copy";
+import UseCallbackDemo_2 from "./05_useCallback/02_useCallbackDemo-进行性能优化";
+
+// export const UserContext = createContext();
+// export const ThemeContext = createContext();
 
 export default function App() {
   // const [show, setShow] = useState(true);
@@ -21,7 +27,17 @@ export default function App() {
 
       {/* <UseEffects /> */}
 
-      <UseContext />
+      {/* <UserContext.Provider value={{name: "FLuoxetine", height: 1.86}}>
+        <ThemeContext.Provider value={{color: "skyblue"}}>
+          <UseContext />
+        </ThemeContext.Provider>
+      </UserContext.Provider> */}
+
+      {/* <UseReducerDemo /> */}
+
+      {/* <UseCallbackDemo /> */}
+
+      <UseCallbackDemo_2 />
     </div>
   );
 }
