@@ -10,7 +10,9 @@ import React, { createContext, useState } from "react";
 // import UseCallbackDemo from "./05_useCallback/01_useCallbackDemo-不能进行性能优化 copy";
 // import UseCallbackDemo_2 from "./05_useCallback/02_useCallbackDemo-进行性能优化";
 // import UseMemoDemo_1 from "./06_useMemo/01_useMemoDemo-复杂计算的应用";
-import UseMemoDemo_2 from "./06_useMemo/02_useMemoDemo-传入子组件应用类型";
+// import UseMemoDemo_2 from "./06_useMemo/02_useMemoDemo-传入子组件应用类型";
+// import UseRefDemo_1 from "./07_useRef/01_useRefDemo_1-引用DOM";
+import UseRefDemo_2 from "./07_useRef/02_useRef-引用其他数据";
 
 // export const UserContext = createContext();
 // export const ThemeContext = createContext();
@@ -38,11 +40,13 @@ export default function App() {
       {/* <UseReducerDemo /> */}
 
       {/* <UseCallbackDemo /> */}
-
       {/* <UseCallbackDemo_2 /> */}
 
       {/* <UseMemoDemo_1 /> */}
-      <UseMemoDemo_2 />
+      {/* <UseMemoDemo_2 /> */}
+
+      {/* <UseRefDemo_1 /> */}
+      <UseRefDemo_2 />
     </div>
   );
 }
