@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useImperativeHandle, useState } from "react";
 
 // import CounterClass from './01_体验hooks/01_counter-class';
 // import CounterHooks from './01_体验hooks/02_counter-hook';
@@ -12,7 +12,9 @@ import React, { createContext, useState } from "react";
 // import UseMemoDemo_1 from "./06_useMemo/01_useMemoDemo-复杂计算的应用";
 // import UseMemoDemo_2 from "./06_useMemo/02_useMemoDemo-传入子组件应用类型";
 // import UseRefDemo_1 from "./07_useRef/01_useRefDemo_1-引用DOM";
-import UseRefDemo_2 from "./07_useRef/02_useRef-引用其他数据";
+// import UseRefDemo_2 from "./07_useRef/02_useRef-引用其他数据";
+// import UseForwardRefDemo from "./08_useImperativeHandle/01_forwardRef";
+import UseImperativeHandleDemo from "./08_useImperativeHandle/02_useImperativeHandle用法";
 
 // export const UserContext = createContext();
 // export const ThemeContext = createContext();
@@ -46,7 +48,10 @@ export default function App() {
       {/* <UseMemoDemo_2 /> */}
 
       {/* <UseRefDemo_1 /> */}
-      <UseRefDemo_2 />
+      {/* <UseRefDemo_2 /> */}
+
+      {/* <UseForwardRefDemo /> */}
+      <UseImperativeHandleDemo />
     </div>
   );
 }
