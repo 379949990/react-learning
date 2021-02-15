@@ -14,7 +14,8 @@ import React, { createContext, useImperativeHandle, useState } from "react";
 // import UseRefDemo_1 from "./07_useRef/01_useRefDemo_1-引用DOM";
 // import UseRefDemo_2 from "./07_useRef/02_useRef-引用其他数据";
 // import UseForwardRefDemo from "./08_useImperativeHandle/01_forwardRef";
-import UseImperativeHandleDemo from "./08_useImperativeHandle/02_useImperativeHandle用法";
+// import UseImperativeHandleDemo from "./08_useImperativeHandle/02_useImperativeHandle用法";
+import UseLayoutEffectDemo_1 from "./09_useLayoutEffect/01_useEffect-修改counter";
 
 // export const UserContext = createContext();
 // export const ThemeContext = createContext();
@@ -51,7 +52,9 @@ export default function App() {
       {/* <UseRefDemo_2 /> */}
 
       {/* <UseForwardRefDemo /> */}
-      <UseImperativeHandleDemo />
+      {/* <UseImperativeHandleDemo /> */}
+
+      <UseLayoutEffectDemo_1 />
     </div>
   );
 }
