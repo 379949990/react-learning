@@ -15,10 +15,16 @@ import React, { createContext, useImperativeHandle, useState } from "react";
 // import UseRefDemo_2 from "./07_useRef/02_useRef-引用其他数据";
 // import UseForwardRefDemo from "./08_useImperativeHandle/01_forwardRef";
 // import UseImperativeHandleDemo from "./08_useImperativeHandle/02_useImperativeHandle用法";
-import UseLayoutEffectDemo_1 from "./09_useLayoutEffect/01_useEffect-修改counter";
+// import UseLayoutEffectDemo_1 from "./09_useLayoutEffect/01_useEffect-修改counter";
+// import CustomizedHookDemo_1 from "./10_自定义hook/01_认识自定义hook";
+// import CustomizedHookDemo_2 from "./10_自定义hook/02_自定义hook-context共享";
+// import CustomizedHookDemo_3 from "./10_自定义hook/03_自定义hook-获取滚动位置";
+import CustomizedHookDemo_4 from "./10_自定义hook/04_自定义hook-localstorage";
 
-// export const UserContext = createContext();
+export const UserContext = createContext();
 // export const ThemeContext = createContext();
+
+export const TokenContext = createContext();
 
 export default function App() {
   // const [show, setShow] = useState(true);
@@ -54,7 +60,16 @@ export default function App() {
       {/* <UseForwardRefDemo /> */}
       {/* <UseImperativeHandleDemo /> */}
 
-      <UseLayoutEffectDemo_1 />
+      {/* <UseLayoutEffectDemo_1 /> */}
+
+      {/* <CustomizedHookDemo_1/> */}
+      {/* <UserContext.Provider value={{name: "FLuoxetine", height: 1.86}}>
+        <TokenContext.Provider value={{token: "kfsdjkfsbfabfnsNFJANSFSNFNSnsdjknf"}}>
+          <CustomizedHookDemo_2 />
+        </TokenContext.Provider>
+      </UserContext.Provider> */}
+      {/* <CustomizedHookDemo_3 /> */}
+      <CustomizedHookDemo_4 />
     </div>
   );
 }
